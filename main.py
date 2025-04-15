@@ -1,12 +1,6 @@
+
 # Rachel Pinkney, Karlie Ward, Sabrina Wong, Spencer Bigelow, Mason Zarges, Gavin Smith
 # GROUP PROJECT WOHOOOO!! :)
-
-import sqlalchemy
-import pandas as pd
-import matplotlib.pyplot as plot
-
-#optional to use
-import openpyxl
 from sqlalchemy import text, create_engine
 import psycopg2
 
@@ -60,3 +54,6 @@ df.to_sql("sale", engine, if_exists = 'replace', index = False)
 
 # Step 5: Confirmation message
 print("You've imported the excel file into your postgres database.")
+
+
+print("If you want to import data, enter 1." "If you want to see summaries of stored data, enter 2. Enter any other value to exit the program: ")
